@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaf8f282"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:baselineAligned="true"
+    android:clickable="true"
+    android:showDividers="beginning|middle|end"
+    android:weightSum="1"
+    android:id="@+id/calendar">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Setup"
+        android:id="@+id/button2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/button3"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/display_id"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignBottom="@+id/change_button_id"
+        android:text=""
+        android:layout_alignParentStart="true"
+        android:enabled="false"
+        android:textColor="#000000"
+        android:layout_toRightOf="@+id/button2"
+        android:layout_alignRight="@+id/addmem_btn_id" />
+
+    <Button
+        android:id="@+id/change_button_id"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="change date"
+        android:layout_below="@+id/button2"
+        android:layout_toRightOf="@+id/display_id" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:fillViewport="false"
+        android:layout_below="@+id/lastname_et_id">
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*" >
+        </TableLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/addmem_btn_id"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:visibility="invisible"
+        android:layout_below="@+id/display_id"
+        android:layout_toEndOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/lastname_et_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="lastname"
+        android:text="ASSIGNED TODAY"
+        android:textColor="#020202"
+        android:layout_below="@+id/addmem_btn_id"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/fistname_et_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="firstName"
+        android:text="DUE TODAY"
+        android:textColor="#030303"
+        android:typeface="normal"
+        android:layout_alignTop="@+id/lastname_et_id"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_toLeftOf="@+id/lastname_et_id"
+        android:layout_alignBottom="@+id/lastname_et_id"
+        android:layout_alignLeft="@+id/button2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Classes"
+        android:id="@+id/button"
+        android:onClick="classBtnClick"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

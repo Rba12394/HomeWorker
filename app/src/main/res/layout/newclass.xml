@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#eaf8f282"
+    android:id="@+id/newclass">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/backButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onBackButtonClick" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next"
+        android:id="@+id/nextButton"
+        android:layout_gravity="center_vertical"
+        android:onClick="handleNextButton"
+        android:layout_column="32"
+        android:layout_row="117"
+        android:layout_marginLeft="543dp"
+        android:layout_alignTop="@+id/backButton"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextClassName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:hint="Name of class"
+        android:clickable="true"
+        android:editable="false"
+        android:gravity="center_horizontal"
+        android:enabled="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What days does it meet?"
+        android:id="@+id/textView8"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="123dp"
+        android:layout_below="@+id/editTextClassName"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView8"
+        android:layout_alignLeft="@+id/textView8"
+        android:id="@+id/linearLayout">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M"
+            android:id="@+id/checkBox3"
+            android:checked="false"
+            android:layout_alignTop="@+id/checkBox4"
+            android:layout_alignStart="@+id/editTextClassName"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="T"
+            android:id="@+id/checkBox4"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/checkBox3"
+            android:checked="false"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="W"
+            android:id="@+id/checkBox5"
+            android:checked="false"
+            android:layout_alignTop="@+id/checkBox4"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TR"
+            android:id="@+id/checkBox6"
+            android:checked="false"
+            android:layout_alignTop="@+id/checkBox7"
+            android:layout_toEndOf="@+id/checkBox5"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="F"
+            android:id="@+id/checkBox7"
+            android:checked="false"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/checkBox6"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView8"
+        android:layout_alignRight="@+id/editTextClassName"
+        android:layout_alignLeft="@+id/textView8"
+        android:id="@+id/linearLayout2">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:visibility="invisible"
+            android:id="@+id/checkBox8"
+            android:checked="false"
+            android:layout_alignTop="@+id/checkBox4"
+            android:layout_alignStart="@+id/editTextClassName"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B"
+            android:visibility="invisible"
+            android:id="@+id/checkBox9"
+            android:layout_centerVertical="true"
+            android:checked="false"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:visibility="invisible"
+            android:id="@+id/checkBox10"
+            android:checked="false"
+            android:layout_alignTop="@+id/checkBox4"
+            android:layout_centerHorizontal="true"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D"
+            android:visibility="invisible"
+            android:id="@+id/checkBox11"
+            android:checked="false"
+            android:layout_alignTop="@+id/checkBox7"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E"
+            android:visibility="invisible"
+            android:id="@+id/checkBox12"
+            android:checked="false"
+            android:layout_centerVertical="true"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="F"
+            android:visibility="invisible"
+            android:id="@+id/checkBox13"
+            android:checked="false"
+            android:layout_centerVertical="true"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="G"
+            android:visibility="invisible"
+            android:id="@+id/checkBox14"
+            android:checked="false"
+            android:layout_centerVertical="true"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

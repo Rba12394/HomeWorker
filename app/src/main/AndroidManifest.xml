@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rfmicron.homeworker" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+
+        <activity android:name=".calendar"
+            android:label="calendar"></activity>
+
+        <activity android:name=".Setup"
+            android:label="setup"></activity>
+
+        <activity android:name=".reminderOps"
+            android:label="reminderOps"></activity>
+
+        <activity android:name=".SemesterSetup"
+            android:label="SemesterSetup"></activity>
+
+        <activity android:name=".ClassList"
+            android:label="ClassList"></activity>
+
+        <activity android:name=".newClass"
+            android:label="newClass"></activity>
+
+        <activity android:name=".newClass2"
+            android:label="newClass2"></activity>
+
+
+        <activity
+            android:name=".HomeWorker"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
